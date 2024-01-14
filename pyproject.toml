@@ -15,14 +15,14 @@ dynamic = ["version"]
 "homepage" = "https://github.com/getsolus/package-management"
 
 [project.scripts]
-eopkg = "pisi.scripts.eopkg"
+eopkg = "pisi.scripts.eopkg:main"
 lseopkg = "pisi.scripts.lseopkg:main"
 uneopkg = "pisi.scripts.uneopkg:main"
 
 # Builder-specific keys below. We use setuptools.
 
 [build-system]
-requires = ["setuptools>=58.0", "lxml>=4.9.1", "python-magic>=0.4.27"]
+requires = ["setuptools>=58.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.dynamic]
